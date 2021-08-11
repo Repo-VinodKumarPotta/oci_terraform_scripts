@@ -45,6 +45,7 @@ Vinod Kumar Potta
 
 vinodkumar.potta@outlook.com
 
-Project Link: https://github.com/Repo-VinodKumarPotta/WeatherForecastApplication.git
+Project Link: https://github.com/Repo-VinodKumarPotta/FibonacciService.git
+              https://github.com/Repo-VinodKumarPotta/oci_terraform_scripts.git
 
 Branch Name: main 
