@@ -31,7 +31,7 @@ resource "oci_load_balancer_backend" "load_balancer_backend" {
 }
 
 variable "oci_core_instance_ip" {
-  default = "10.0.0.145	"
+  default = "10.0.0.108"
 }
 
 resource "oci_load_balancer_backend_set" "load_balancer_backend_set" {
@@ -112,7 +112,7 @@ variable "load_balancer_shape_details_minimum_bandwidth_in_mbps" {
 
 variable "subnet_ids"{
   default = [
-    "ocid1.subnet.oc1.ap-hyderabad-1.aaaaaaaaxmq6cunwz6gbqz7p5clhadkbceoq5r2wcksrjk6sxlqjne5bjeza"
+    "ocid1.subnet.oc1.ap-hyderabad-1.aaaaaaaad5g45brusjosnuwkshocdo5oyubitfopuyhrmamyahdhs25dfkbq"
   ]
 }
 
@@ -178,15 +178,15 @@ resource "oci_load_balancer_rule_set" "load_balancer_rule_set" {
     are_invalid_characters_allowed = true
     conditions {
       attribute_name = "PATH"
-      attribute_value = "/hello-world/calculateFibonacciSeries?number=7"
+      attribute_value = "/hello-world"
       operator = "FORCE_LONGEST_PREFIX_MATCH"
     }
     redirect_uri {
-      protocol = "{protocol}"
-      host = "in{host}"
+      protocol = "http"
+      host = "{host}"
       port = 8080
-      path = "{path}/hello-world/calculateFibonacciSeries?number=7"
-      query = "?lang=en"
+      path = "/hello-world/calculateFibonacciSeries"
+      query = "?number=7"
     }
     #description = var.rule_set_items_description
     #header = var.rule_set_items_header

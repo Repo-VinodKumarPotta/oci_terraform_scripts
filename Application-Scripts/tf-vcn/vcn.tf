@@ -7,6 +7,6 @@ resource "oci_core_vcn" "vcn-application" {
   #cidr_blocks = var.vcn_cidr_blocks
   #defined_tags = {"Operations.CostCenter"= "42"}
   display_name = "vcn-application"
-  #dns_label = "vcn-dns-1"
+  dns_label = "vcnapplication"
   #freeform_tags = {"Department"= "vcn-1"}
 }

@@ -12,7 +12,7 @@ resource "oci_core_instance" "application-compute" {
   display_name = "application-compute"
   create_vnic_details {
     assign_public_ip = false
-    subnet_id = "ocid1.subnet.oc1.ap-hyderabad-1.aaaaaaaaxmq6cunwz6gbqz7p5clhadkbceoq5r2wcksrjk6sxlqjne5bjeza"
+    subnet_id = "ocid1.subnet.oc1.ap-hyderabad-1.aaaaaaaad5g45brusjosnuwkshocdo5oyubitfopuyhrmamyahdhs25dfkbq"
   }
 
   metadata = {
